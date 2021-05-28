@@ -4,8 +4,8 @@ $page_title = 'Webprogramming Assignment 3';
 $navigation = Array(
     'active' => 'Simple Form',
     'items' => Array(
-        'News' => '/WP21/assignment_3/index.php',
-        'Add news item' => '/WP21/assignment_3/news_add.php',
+        'News' => 'index.php',
+        'Add news item' => 'news_add.php',
         'Leap Year' => 'leapyear.php',
         'Simple Form' => 'simple_form.php'
     )
@@ -31,7 +31,7 @@ if (isset($_POST["name"]) && isset($_POST["city"]) && isset($_POST["age"])) {
         <?php
     } else {
         ?>
-        <p> You're from <?php echo $_POST["city"]; ?> </p> <br> <?php
+        <p> You're from <?php echo $_POST["city"]; ?>! </p> <br> <?php
     }
 
     ?>

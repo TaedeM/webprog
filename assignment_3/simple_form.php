@@ -4,8 +4,8 @@ $page_title = 'Webprogramming Assignment 3';
 $navigation = Array(
     'active' => 'Simple Form',
     'items' => Array(
-        'News' => '/WP21/assignment_3/index.php',
-        'Add news item' => '/WP21/assignment_3/news_add.php',
+        'News' => 'index.php',
+        'Add news item' => 'news_add.php',
         'Leap Year' => 'leapyear.php',
         'Simple Form' => 'simple_form.php'
     )
@@ -27,7 +27,7 @@ if (isset($_GET["name"]) && isset($_GET["city"])) {
         <?php
     } else {
         ?>
-        <p> You're from <?php echo $_GET["city"]; ?> </p> <br> <?php
+        <p> You're from <?php echo $_GET["city"]; ?>! </p> <br> <?php
     }
 
 }
@@ -39,6 +39,7 @@ if (isset($_GET["name"]) && isset($_GET["city"])) {
             <div class="form-group"> 
                 <label for="name">Full name:</label>
                 <input type="text" class="form-control" name="name" required>
+
             </div> 
 
             <div class="form-group"> 
